@@ -1,4 +1,4 @@
-# jsreport-phantom-pdf
+# jsreport-phantom-image
 [![Build Status](https://travis-ci.org/jsreport/jsreport-phantom-image.png?branch=master)](https://travis-ci.org/jsreport/jsreport-phantom-image)
 
 > jsreport recipe which is rendering images from html using phantomjs
