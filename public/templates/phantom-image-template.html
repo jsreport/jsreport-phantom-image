@@ -1,0 +1,25 @@
+﻿<a class="expandable-header"><i class="glyphicon glyphicon-sm glyphicon-file"></i>Phantom Image<b class="caret caret-right" {{if ~isFilled()}}style="color: green"{{else}}{{/if}}></b></a>
+<div class="expandable-body properties" style="display: none">
+
+    <span class="side-title">Image Type</span>
+    <div class="btn-group dropdown" data-binding="imageType">
+        <button class="btn btn-xs dropdown-button" data-value="{{:imageType}}">{{:imageType}}</button>
+        <button class="btn btn-xs dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu pull-right">
+            <li><a data-value="png">png</a></li>
+            <li><a data-value="jpeg">jpeg</a></li>
+            <li><a data-value="gif">gif</a></li>
+        </ul>
+    </div>
+
+    <span class="side-title">Quality</span>
+    <input type="text" class="form-control area-mini" placeholder="100" name="quality" value="{{:quality}}">
+
+    <span class="side-title">Print Delay (ms)</span>
+    <input type="text" class="form-control area-mini" placeholder="800" name="printDelay" value="{{:printDelay}}">
+
+    <span class="side-title" title="window.PHANTOM_HTML_TO_PDF_READY=true;">Wait for printing trigger</span>
+    <input type="checkbox" class="checkbox form-control area-mini" name="waitForJS" title="window.PHANTOM_HTML_TO_PDF_READY=true;" value="{{:waitForJS}}">
+</div>

@@ -1,0 +1,44 @@
+{
+  "name": "jsreport-phantom-image",
+  "version": "0.1.0",
+  "description": "jsreport recipe which is rendering images from html using phantomjs",
+  "scripts": {
+    "test": "mocha test && standard"
+  },
+  "keywords": [
+    "jsreport",
+    "analytics"
+  ],
+  "homepage": "https://github.com/jsreport/jsreport-phantom-image",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsreport/jsreport-phantom-image.git"
+  },
+  "standard": {
+    "ignore": [
+      "public/**"
+    ],
+    "globals": [
+      "describe",
+      "it",
+      "beforeEach",
+      "define",
+      "ace"
+    ]
+  },
+  "license": "LGPL",
+  "dependencies": {
+    "phantom-html-to-pdf": "0.3.3",
+    "q": "1.4.1",
+    "stream-to-array": "2.2.0"
+  },
+  "author": "Jan Blaha",
+  "devDependencies": {
+    "eslint": "^1.9.0",
+    "jsreport-core": "*",
+    "jsreport-templates": "*",
+    "mocha": "^2.3.3",
+    "should": "^7.1.1",
+    "standard": "^5.3.1"
+  }
+}
