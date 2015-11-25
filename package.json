@@ -6,8 +6,7 @@
     "test": "mocha test && standard"
   },
   "keywords": [
-    "jsreport",
-    "analytics"
+    "jsreport"
   ],
   "homepage": "https://github.com/jsreport/jsreport-phantom-image",
   "repository": {
