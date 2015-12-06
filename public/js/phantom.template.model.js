@@ -29,14 +29,15 @@
     },
 
     isDirty: function () {
-      return this.get('imageType') !== 'png' || this.get('printDelay') != null || this.get('waitForJS') != null || this.get('quality') !== '100'
+      return this.get('imageType') !== 'png' || this.get('printDelay') != null || this.get('waitForJS') != null || this.get('quality') !== '100' || this.get('blockJavaScript')
     },
 
     apiOverride: function (req) {
-      req.template.phantom = {
+      req.template.phantomImage = {
         maring: this.get('imageType') || 'png',
         printDelay: this.get('printDelay') || '...',
-        waitForJS: this.get('waitForJS') || '...'
+        waitForJS: this.get('waitForJS') || '...',
+        blockJavaScript: this.get('blockJavaScript') || '...'
       }
     }
   })
