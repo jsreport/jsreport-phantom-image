@@ -13,4 +13,4 @@
 - quality - quality (1-100) of output image, default 100
 - printDelay - number of ms to wait before printing starts
 - blockJavaScript - block running js on the page
-- waitForJS - see [phantom-html-to-pdf](https://github.com/pofider/phantom-html-to-pdf)
+- waitForJS - see [phantom-html-to-pdf](https://github.com/pofider/phantom-html-to-pdf) - the window variable to set in this case is `JSREPORT_READY_TO_START`
