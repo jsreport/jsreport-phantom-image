@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "jsreport recipe which is rendering images from html using phantomjs",
   "scripts": {
-    "test": "mocha test && standard",
+    "test": "mocha test --timeout 7000 && standard",
     "prepublish": "node node_modules/jsreport-express/tools/optimize.js"
   },
   "keywords": [
