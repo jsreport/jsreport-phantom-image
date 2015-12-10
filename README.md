@@ -7,6 +7,7 @@
 ##Installation
 
 > **npm install jsreport-phantom-image**
+
 ##Usage
 To use `recipe` in for template rendering set `template.recipe=phantom-image` in the rendering request.
 
