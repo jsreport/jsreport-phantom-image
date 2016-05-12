@@ -28,7 +28,7 @@
   },
   "license": "LGPL",
   "dependencies": {
-    "phantom-html-to-pdf": "0.3.3",
+    "phantom-html-to-pdf": "0.4.1",
     "q": "1.4.1",
     "stream-to-array": "2.2.0"
   },
