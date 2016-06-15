@@ -1,10 +1,11 @@
 {
   "name": "jsreport-phantom-image",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "jsreport recipe which is rendering images from html using phantomjs",
   "scripts": {
     "test": "mocha test --timeout 7000 && standard",
-    "prepublish": "node node_modules/jsreport-express/tools/optimize.js"
+    "build": "jsreport-studio-build",
+    "prepublish": "in-publish && jsreport-studio-build || not-in-publish"
   },
   "keywords": [
     "jsreport"
@@ -16,31 +17,35 @@
   },
   "standard": {
     "ignore": [
-      "public/**"
+      "main.js"
     ],
-    "globals": [
-      "describe",
-      "it",
-      "beforeEach",
-      "define",
-      "ace"
-    ]
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "mocha": true,
+      "browser": true
+    }
   },
   "license": "LGPL",
   "dependencies": {
-    "phantom-html-to-pdf": "0.4.1",
+    "in-publish": "2.0.0",
+    "phantom-html-to-pdf": "0.4.3",
     "q": "1.4.1",
-    "stream-to-array": "2.2.0"
+    "stream-to-array": "2.3.0"
   },
   "author": "Jan Blaha",
   "devDependencies": {
-    "eslint": "^1.9.0",
+    "babel-eslint": "6.0.4",
+    "eslint": "2.12.0",
+    "eslint-config-standard-jsx": "1.2.1",
+    "eslint-plugin-babel": "3.2.0",
     "jsreport-core": "*",
-    "jsreport-express": "*",
     "jsreport-templates": "*",
-    "mocha": "^2.3.3",
-    "requirejs": "^2.1.22",
-    "should": "^7.1.1",
-    "standard": "^5.3.1"
-  }
+    "mocha": "2.5.3",
+    "should": "9.0.2",
+    "standard": "7.1.2"
+  },
+  "files": [
+    "lib", "index.js", "jsreport.config.js", "studio"
+  ]
 }

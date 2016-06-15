@@ -28,4 +28,5 @@ node_modules
 
 .idea
 
-public/js/main.js
+studio/main.js
+studio/main.js.map
