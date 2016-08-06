@@ -29,7 +29,7 @@
   "license": "LGPL",
   "dependencies": {
     "in-publish": "2.0.0",
-    "phantom-html-to-pdf": "0.4.4",
+    "phantom-html-to-pdf": "0.4.5",
     "q": "1.4.1",
     "stream-to-array": "2.3.0"
   },
