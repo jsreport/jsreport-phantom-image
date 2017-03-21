@@ -4,11 +4,11 @@
 
 > jsreport recipe which is rendering images from html using phantomjs
 
-##Installation
+## Installation
 
 > **npm install jsreport-phantom-image**
 
-##Usage
+## Usage
 To use `recipe` in for template rendering set `template.recipe=phantom-image` in the rendering request.
 
 ```js
@@ -17,7 +17,7 @@ To use `recipe` in for template rendering set `template.recipe=phantom-image` in
 }
 ```
 
-##jsreport-core
+## jsreport-core
 You can apply this extension also manually to [jsreport-core](https://github.com/jsreport/jsreport-core)
 
 ```js
@@ -25,7 +25,7 @@ var jsreport = require('jsreport-core')()
 jsreport.use(require('jsreport-phantom-image')({ strategy: 'phantom-server' }))
 ```
 
-##Configurations
+## Configurations
 
 - imageType - png, gif or jpeg, default png
 - quality - quality (1-100) of output image, default 100
