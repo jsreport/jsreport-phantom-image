@@ -5,14 +5,12 @@ require('should')
 describe('phantom image', function () {
   var reporter
 
-  beforeEach(function (done) {
+  beforeEach(function () {
     reporter = new Reporter({
       rootDirectory: path.join(__dirname, '../')
     })
 
-    reporter.init().then(function () {
-      done()
-    }).fail(done)
+    return reporter.init()
   })
 
   it('should render png by default', function (done) {
@@ -20,7 +18,7 @@ describe('phantom image', function () {
       template: {content: 'Heyx', recipe: 'phantom-image', engine: 'none'}
     }
 
-    reporter.render(request, {}).then(function (response) {
+    reporter.render(request).then(function (response) {
       response.content.toString('utf8').should.containEql('PNG')
       done()
     }).catch(done)
@@ -31,7 +29,7 @@ describe('phantom image', function () {
       template: {content: 'Heyx', recipe: 'phantom-image', engine: 'none', phantomImage: {imageType: 'jpeg'}}
     }
 
-    reporter.render(request, {}).then(function (response) {
+    reporter.render(request).then(function (response) {
       response.content.toString('utf8').should.containEql('JFIF')
       done()
     }).catch(done)
@@ -42,10 +40,9 @@ describe('phantom image', function () {
       template: {content: 'Heyx', recipe: 'phantom-image', engine: 'none', phantomImage: {imageType: 'gif'}}
     }
 
-    reporter.render(request, {}).then(function (response) {
+    reporter.render(request).then(function (response) {
       response.content.toString('utf8').should.containEql('GIF')
       done()
     }).catch(done)
   })
 })
-

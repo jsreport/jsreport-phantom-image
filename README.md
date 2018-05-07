@@ -13,7 +13,7 @@ To use `recipe` in for template rendering set `template.recipe=phantom-image` in
 
 ```js
 {
-  template: { content: '...', recipe: 'phantom-image', enginne: '...', phantomImage: { ... } }
+  template: { content: '...', recipe: 'phantom-image', engine: '...', phantomImage: { ... } }
 }
 ```
 
