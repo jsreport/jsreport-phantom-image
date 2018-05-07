@@ -5,14 +5,12 @@ require('should')
 describe('phantom image', function () {
   var reporter
 
-  beforeEach(function (done) {
+  beforeEach(function () {
     reporter = new Reporter({
       rootDirectory: path.join(__dirname, '../')
     })
 
-    reporter.init().then(function () {
-      done()
-    }).catch(done)
+    return reporter.init()
   })
 
   it('should render png by default', function (done) {
