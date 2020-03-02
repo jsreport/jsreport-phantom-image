@@ -1,6 +1,6 @@
 {
   "name": "jsreport-phantom-image",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "jsreport recipe which is rendering images from html using phantomjs",
   "scripts": {
     "test": "mocha test --timeout 7000 && standard",
@@ -41,7 +41,7 @@
     "eslint-config-standard-jsx": "5.0.0",
     "eslint-plugin-babel": "4.1.2",
     "in-publish": "2.0.0",
-    "jsreport-core": "2.7.1",
+    "jsreport-core": "2.7.2",
     "jsreport-studio-dev": "1.5.0",
     "jsreport-templates": "2.3.2",
     "mocha": "5.0.5",
