@@ -31,7 +31,7 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "phantom-html-to-pdf": "0.6.0",
+    "phantom-html-to-pdf": "0.6.1",
     "stream-to-array": "2.3.0"
   },
   "author": "Jan Blaha",
@@ -40,10 +40,10 @@
     "eslint": "4.19.1",
     "eslint-config-standard-jsx": "5.0.0",
     "eslint-plugin-babel": "4.1.2",
-    "in-publish": "2.0.0",
-    "jsreport-core": "2.7.2",
-    "jsreport-studio-dev": "1.5.0",
-    "jsreport-templates": "2.3.2",
+    "in-publish": "2.0.1",
+    "jsreport-core": "2.10.1",
+    "jsreport-studio-dev": "1.6.0",
+    "jsreport-templates": "2.4.0",
     "mocha": "5.0.5",
     "should": "13.2.3",
     "standard": "11.0.1"
