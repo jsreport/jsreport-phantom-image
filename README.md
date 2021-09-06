@@ -1,3 +1,6 @@
+**⚠️ This repository has been moved to the monorepo [jsreport/jsreport](https://github.com/jsreport/jsreport)**
+--
+
 # jsreport-phantom-image
 [![NPM Version](http://img.shields.io/npm/v/jsreport-phantom-image.svg?style=flat-square)](https://npmjs.com/package/jsreport-phantom-image)
 [![Build Status](https://travis-ci.org/jsreport/jsreport-phantom-image.png?branch=master)](https://travis-ci.org/jsreport/jsreport-phantom-image)
